@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.outside-container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #ada2ff, #C0DEFF );
+}
+
+.inner-container {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.274);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px;
+    z-index: 1;
+}
+  
+.signup-header h1{
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.signup-header p{
+    margin-bottom: 20px;
+    color: rgb(86, 85, 85);
+}
+p{
+    margin: 10px 0px;
+    
+}
+label{
+    display: block;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 8px;
+}
+
+.button{
+    margin: 10px 0px;
+    background-color: #4b3db2;
+    border: none;
+    font-size: 1rem;
+    color:rgb(255, 255, 255);   
+}
+.button:hover{
+    background-color:#9183fc ;
+    cursor: pointer;
+}
+.signup-footer{
+    text-align: center;
+}
+.signup-footer a{
+    color: #4d3cc8;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top left, rgba(255, 255, 255, 0.2), rgb(255, 255, 255));
+}
+
+.c1{
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+
+.c2{
+    position: absolute;
+    bottom: 80px;
+    right: 70px;
+}
+
+@media screen and (max-width:910px){
+    
+    .inner-container{
+        top: 30%;       
+    }
+    
+    .c1{
+        top:230px;
+    }
+    .c2{
+        bottom: 260px;
+    }
+}
+@media screen and (max-width:420px){
+    .outside-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .inner-container{
+        width: 350px;
+        top: 20%;
+    }
+    .c1{
+        top: 20px;
+        left: -100px;
+    }
+    .c2{
+        bottom: 130px;
+        right: -100px;
+    }
+}
